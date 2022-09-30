@@ -10,9 +10,11 @@ def crear_profesor(request):
     template= loader.get_template("template.html")
 
     flia=Familia (nombre="Juan Carlos", apellido="Martin", email="juan@gmail.com", profesion="Abogado")
+    flia.save()
     flia_2=Familia (nombre="Belen", apellido="Frati", email="belen_frati@gmail.com", profesion="Arquitecta")
+    flia_2.save()
     flia_3=Familia (nombre="Nazareno", apellido="Martincevich", email="nazareno@gmail.com", profesion="Economista")
-
+    flia_3.save()
     dict_de_contexto={
         "flia_1": flia,
         "flia_2": flia_2,
